@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Kwh = prompt('Nhập số điện đã dùng:');
+    let a;
+    if (Kwh > 0) {
+        if (Kwh <= 50) {
+            a = Kwh * 1.678;
+            alert('Tiền điện:' + a + 'VND');
+        } else {
+            if (Kwh <= 200) {
+                a = Kwh * 2.014;
+                alert('Tiền điện:' + a + 'VND')
+            }else {
+                if (Kwh<=400 ) {
+                a = Kwh * 2.834;
+                alert('Tiền điện:' + a + 'VND');
+                } else{
+                    a = Kwh * 2.927;
+                    alert('Tiền điện:' + a + 'VND');
+                }
+            }
+        }
+    }
+</script>
+</body>
+</html>
