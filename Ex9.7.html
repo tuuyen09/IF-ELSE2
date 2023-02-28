@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let min = prompt('Nhập số phút gọi:');
+  let sub;
+  if (min<=50){
+      sub = 25000+ (min*600);
+      alert('Số cước phải trả là:' + sub + 'VND');
+  }else {
+      if (min<=200){
+          sub = 25000 + (min*400);
+          alert('Số cước phải trả là:' + sub + 'VND');
+      }else {
+          sub = 25000 + (min*200);
+          alert('Số cước phải trả là:' + sub + 'VND');
+      }
+  }
+</script>
+</body>
+</html>
