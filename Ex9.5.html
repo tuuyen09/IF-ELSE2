@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let midterm = parseFloat(prompt('Điểm giữa kì:'));
+  let final = parseFloat(prompt('Điểm cuối kì'));
+  let average = (midterm + final)/2
+  if (average>=8){
+    document.write('Học sinh giỏi');
+  } else {
+    if (average >= 6.5){
+      document.write('Học sinh tiên tiến');
+    }else {
+      if (average>=5){
+        document.write('Học sinh trung bình');
+      }else {
+        document.write('Học sinh yếu');
+      }
+    }
+  }
+</script>
+</body>
+</html>
